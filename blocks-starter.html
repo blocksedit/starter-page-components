@@ -68,7 +68,7 @@
           </div>
           <div class="col-12 block-component" data-group="email-field-component" data-title="Email field">
             <label for="email-input" class="block-edit" data-block="text-field-label">Email address</label>
-            <input type="email" name="" id="email-input" class="block-edit" data-block="email-field">
+            <input type="email" name="" id="email-input" class="block-edit" data-block="email-field" required>
           </div>
           <div class="col-12 block-component" data-group="tel-field-component" data-title="Phone number field">
             <label for="tel-input" class="block-edit" data-block="text-field-label">Phone number</label>
@@ -105,16 +105,20 @@
             <textarea rows="5" id="textarea" name="" class="block-edit" data-block="text-area-field"></textarea>
           </div>
           <div class="col-12 block-component" data-group="radio-field-component" data-title="Radio buttons">
-            <p class="block-edit">Receive notifications?</p>
-            <ul style="margin-left: 0; list-style: none;">
-              <li class="block-region block-repeat"><input type="radio" name="radio" id="radio" name="" value="Radio" class="block-edit" data-block="radio-field"> <label for="radio" class="block-edit" data-block="radio-field-label">All notifications</label></li>
-            </ul>
+            <fieldset>
+              <legend class="block-edit">Receive notifications?</legend>
+              <ul style="margin-left: 0; list-style: none;">
+                <li class="block-region block-repeat"><input type="radio" name="radio" id="radio" name="" value="Radio" class="block-edit" data-block="radio-field" required> <label for="radio" class="block-edit" data-block="radio-field-label">All notifications</label></li>
+              </ul>
+            </fieldset>
           </div>
           <div class="col-12 block-component" data-group="checkbox-field-component" data-title="Checkboxes">
-            <p class="block-edit">Emails to receive:</p>
-            <ul style="margin-left: 0; list-style: none;">
-              <li class="block-region block-repeat"><input type="checkbox" name="checkbox" value="Comments" id="checkbox" class="block-edit" data-block="checkbox-field"> <label for="checkbox" class="block-edit" data-block="checkbox-field-label">Account info and changes</label></li>
-            </ul>
+            <fieldset>
+              <legend class="block-edit">Emails to receive:</legend>
+              <ul style="margin-left: 0; list-style: none;">
+                <li class="block-region block-repeat"><input type="checkbox" name="checkbox" value="Comments" id="checkbox" class="block-edit" data-block="checkbox-field" required> <label for="checkbox" class="block-edit" data-block="checkbox-field-label">Account info and changes</label></li>
+              </ul>
+            </fieldset>
           </div>
           <input type="submit" value="Submit" class="btn block-edit" data-block="submit-button">
         </form>

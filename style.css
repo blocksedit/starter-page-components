@@ -2,6 +2,7 @@
 
 :root {
   color-scheme: light dark;
+  accent-color: #0b72c7;
 
   --primary: #444;
   --secondary: #0b72c7;
@@ -285,6 +286,25 @@ form {
   font-size: 20px;
 }
 
+form input:hover, form input:focus, form textarea:hover, form textarea:focus, select:hover, select:focus {
+  border-color: #999;
+  outline: 0;
+}
+form div:has(label + *:required) label::after, form fieldset:has(*:required + label) legend::after {
+  content: " *";
+}
+form input:focus:invalid {
+  border-color: #b91616;
+  background-color: #f1e5e5;
+}
+form:has(*:invalid) input[type="submit"] {
+  background-color: #aaa;
+
+  &:hover {
+    background-color: #aaa;
+  }
+}
+
 form .col-12.row {
   row-gap: 0;
 }
@@ -310,7 +330,7 @@ input[type=radio], input[type=checkbox] {
   height: 20px;
   vertical-align: middle;
 }
-input[type=radio]+label, input[type=checkbox]+label {
+input[type=radio] + label, input[type=checkbox] + label {
   display: inline-block;
 }
 
