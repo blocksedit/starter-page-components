@@ -1,160 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light dark">
-    <title>Starter page components</title>
-    <meta name="apple-mobile-web-app-title" content="Starter">
-    <meta name="description" content="Standard layout components for designing and building web pages.">
-    <meta name="author" content="Blocks Edit">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="appicon.png">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="color-scheme" content="light dark">
+	<title>Starter page components</title>
+	<meta name="apple-mobile-web-app-title" content="Starter">
+	<meta name="description" content="Standard layout components for designing and building web pages.">
+	<meta name="author" content="Blocks Edit">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="appicon.png">
 <!-- Open Graph -->
-    <meta property="og:site_name" content="Starter">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
-    <meta property="og:title" content="Starter page components">
-    <meta property="og:description" content="Standard layout components for designing and building web pages.">
-    <meta property="og:image" content="">
-  </head>
+	<meta property="og:site_name" content="Starter">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:title" content="Starter page components">
+	<meta property="og:description" content="Standard layout components for designing and building web pages.">
+	<meta property="og:image" content="">
+</head>
 
-  <body>
+<body>
 
 <!-- Header -->
 
-    <header class="row">
-      <div class="col-9 primary">
-        <a href="#"><img src="https://blocksedit.com/starter/img/logo.png" width="75" height="35" class="logo" alt=""></a>
-        <nav>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-          </ul>
-        </nav>
-      </div>
-      <nav class="col-3 secondary right-align">
-        <ul>
-          <li><a href="#">Sign In</a></li>
-          <li><a href="#" class="btn">Sign Up</a></li>
-        </ul>
-      </nav>
-    </header>
+<header>
+	<div class="main">
+		<a href="#"><img src="https://blocksedit.com/starter/img/logo.png" width="75" height="35" class="logo" alt=""></a>
+		<nav class="primary">
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Pricing</a></li>
+			</ul>
+			<svg width="18" height="18" class="menu">
+				<g>
+					<path transform="matrix(1,0,0,1,-666.138,-100)" d="M681.092,105.694C681.308,105.694 681.495,105.614 681.654,105.456C681.812,105.297 681.892,105.11 681.892,104.894C681.892,104.67 681.812,104.481 681.654,104.326C681.495,104.171 681.308,104.094 681.092,104.094L669.237,104.094C669.014,104.094 668.825,104.171 668.67,104.326C668.515,104.481 668.438,104.67 668.438,104.894C668.438,105.11 668.515,105.297 668.67,105.456C668.825,105.614 669.014,105.694 669.237,105.694L681.092,105.694ZM681.092,109.694C681.308,109.694 681.495,109.614 681.654,109.456C681.812,109.297 681.892,109.11 681.892,108.894C681.892,108.67 681.812,108.481 681.654,108.326C681.495,108.171 681.308,108.094 681.092,108.094L669.237,108.094C669.014,108.094 668.825,108.171 668.67,108.326C668.515,108.481 668.438,108.67 668.438,108.894C668.438,109.11 668.515,109.297 668.67,109.456C668.825,109.614 669.014,109.694 669.237,109.694L681.092,109.694ZM681.092,113.694C681.308,113.694 681.495,113.614 681.654,113.456C681.812,113.297 681.892,113.11 681.892,112.894C681.892,112.67 681.812,112.481 681.654,112.326C681.495,112.171 681.308,112.094 681.092,112.094L669.237,112.094C669.014,112.094 668.825,112.171 668.67,112.326C668.515,112.481 668.438,112.67 668.438,112.894C668.438,113.11 668.515,113.297 668.67,113.456C668.825,113.614 669.014,113.694 669.237,113.694L681.092,113.694Z"></path>
+				</g>
+			</svg>
+			<svg width="18" height="18" class="close">
+				<g id="be-symbol-delete">
+					<path transform="matrix(1,0,0,1,-470,-50)" d="M485.112,66C485.228,66 485.342,65.979 485.453,65.937C485.564,65.894 485.662,65.831 485.746,65.746C485.831,65.662 485.894,65.564 485.937,65.453C485.979,65.342 486,65.228 486,65.112C486,64.996 485.979,64.885 485.937,64.779C485.894,64.673 485.831,64.578 485.746,64.494L480.245,59.008L485.746,53.506C485.831,53.422 485.894,53.327 485.937,53.221C485.979,53.115 486,53.004 486,52.888C486,52.772 485.979,52.658 485.937,52.547C485.894,52.436 485.831,52.338 485.746,52.254C485.662,52.18 485.564,52.119 485.453,52.071C485.342,52.024 485.228,52 485.112,52C484.996,52 484.885,52.024 484.779,52.071C484.673,52.119 484.578,52.18 484.494,52.254L479.008,57.755L473.506,52.254C473.422,52.18 473.327,52.119 473.221,52.071C473.115,52.024 473.004,52 472.888,52C472.772,52 472.658,52.024 472.547,52.071C472.436,52.119 472.344,52.18 472.27,52.254C472.185,52.338 472.119,52.436 472.071,52.547C472.024,52.658 472,52.772 472,52.888C472,53.004 472.024,53.115 472.071,53.221C472.119,53.327 472.185,53.422 472.27,53.506L477.755,59.008L472.27,64.494C472.185,64.578 472.119,64.673 472.071,64.779C472.024,64.885 472,64.996 472,65.112C472,65.228 472.024,65.342 472.071,65.453C472.119,65.564 472.185,65.662 472.27,65.746C472.344,65.831 472.436,65.894 472.547,65.937C472.658,65.979 472.772,66 472.888,66C473.004,66 473.115,65.979 473.221,65.937C473.327,65.894 473.422,65.831 473.506,65.746L479.008,60.245L484.494,65.746C484.578,65.831 484.673,65.894 484.779,65.937C484.885,65.979 484.996,66 485.112,66Z"></path>
+				</g>
+			</svg>
+		</nav>
+	</div>
+	<nav class="cta right-align secondary">
+		<ul>
+			<li><a href="#">Sign In</a></li>
+			<li><a href="#" class="btn">Sign Up</a></li>
+		</ul>
+	</nav>
+</header>
 
 <!-- Content -->
 
-    <main class="container">
+<main class="container">
 
 <!-- Form -->
-      <section class="box box-full block-section" data-group="form" data-title="Form container">
-        <form action="" method="">
-          <p class="block-edit">Use the form below to contact us.</p>
-          <div class="row block-region"></div>
-          <div class="col-12 row block-component" data-group="two-column-text-field-component" data-title="Two-column text fields">
-            <div class="col-6">
-              <label for="text-input" class="block-edit" data-block="text-field-label">First name</label>
-              <input type="text" name="" id="text-input" class="block-edit" data-block="text-field">
-            </div>
-            <div class="col-6">
-              <label for="text-input-2" class="block-edit" data-block="text-field-label-2">Last name</label>
-              <input type="text" name="" id="text-input-2" class="block-edit" data-block="text-field-2">
-            </div>
-          </div>
-          <div class="col-12 block-component" data-group="text-field-component" data-title="Single text field">
-            <label for="text-input-3" class="block-edit" data-block="text-field-label">Organization</label>
-            <input type="text" name="" id="text-input-3" class="block-edit" data-block="text-field-3">
-          </div>
-          <div class="col-12 block-component" data-group="email-field-component" data-title="Email field">
-            <label for="email-input" class="block-edit" data-block="text-field-label">Email address</label>
-            <input type="email" name="" id="email-input" class="block-edit" data-block="email-field" required>
-          </div>
-          <div class="col-12 block-component" data-group="tel-field-component" data-title="Phone number field">
-            <label for="tel-input" class="block-edit" data-block="text-field-label">Phone number</label>
-            <input type="tel" name="" id="tel-input" class="block-edit" data-block="tel-field">
-          </div>
-          <div class="col-12 row block-component" data-group="three-column-text-field-component" data-title="Three-column text fields">
-            <div class="col-4">
-              <label for="text-input-4" class="block-edit" data-block="text-field-label-4">City</label>
-              <input type="text" name="" id="text-input-4" class="block-edit" data-block="text-field-4">
-            </div>
-            <div class="col-4">
-              <label for="text-input-5" class="block-edit" data-block="text-field-label-5">State</label>
-              <input type="text" name="" id="text-input-5" class="block-edit" data-block="text-field-5">
-            </div>
-            <div class="col-4">
-              <label for="text-input-6" class="block-edit" data-block="text-field-label-6">ZIP code</label>
-              <input type="text" name="" id="text-input-6" class="block-edit" data-block="text-field-6">
-            </div>
-          </div>
-          <div class="col-12 block-component" data-group="select-field-component" data-title="Select field">
-            <label for="select" class="block-edit" data-block="select-field-label">Subject</label>
-            <select id="select" class="block-edit" data-block="select-field">
-              <option value="">Choose one</option>
-              <option value="">Issue</option>
-              <option value="">Request</option>
-            </select>
-          </div>
-          <div class="col-12 block-component" data-group="file-upload-field-component" data-title="File upload field">
-            <label for="" class="block-edit" data-block="file-upload-field-label">Include attachment</label>
-            <input type="file" class="block-edit" data-block="file-upload-field">
-          </div>
-          <div class="col-12 block-component" data-group="text-area-component" data-title="Text area field">
-            <label for="textarea" class="block-edit" data-block="text-area-field-label">Questions/comments</label>
-            <textarea rows="5" id="textarea" name="" class="block-edit" data-block="text-area-field"></textarea>
-          </div>
-          <div class="col-12 block-component" data-group="radio-field-component" data-title="Radio buttons">
-            <fieldset>
-              <legend class="block-edit">Receive notifications?</legend>
-              <ul style="margin-left: 0; list-style: none;">
-                <li class="block-region block-repeat"><input type="radio" name="radio" id="radio" name="" value="Radio" class="block-edit" data-block="radio-field" required> <label for="radio" class="block-edit" data-block="radio-field-label">All notifications</label></li>
-              </ul>
-            </fieldset>
-          </div>
-          <div class="col-12 block-component" data-group="checkbox-field-component" data-title="Checkboxes">
-            <fieldset>
-              <legend class="block-edit">Emails to receive:</legend>
-              <ul style="margin-left: 0; list-style: none;">
-                <li class="block-region block-repeat"><input type="checkbox" name="checkbox" value="Comments" id="checkbox" class="block-edit" data-block="checkbox-field" required> <label for="checkbox" class="block-edit" data-block="checkbox-field-label">Account info and changes</label></li>
-              </ul>
-            </fieldset>
-          </div>
-          <input type="submit" value="Submit" class="btn block-edit" data-block="submit-button">
-        </form>
-      </section>
+	<section class="box box-full block-section" data-group="form" data-title="Form container">
+		<form action="" method="">
+			<p class="block-edit">Use the form below to contact us.</p>
+			<div class="row block-region"></div>
+			<div class="col-12 row block-component" data-group="two-column-text-field-component" data-title="Two-column text fields">
+				<div class="col-6">
+					<label for="text-input" class="block-edit" data-block="text-field-label">First name</label>
+					<input type="text" name="" id="text-input" class="block-edit" data-block="text-field">
+				</div>
+				<div class="col-6">
+					<label for="text-input-2" class="block-edit" data-block="text-field-label-2">Last name</label>
+					<input type="text" name="" id="text-input-2" class="block-edit" data-block="text-field-2">
+				</div>
+			</div>
+			<div class="col-12 block-component" data-group="text-field-component" data-title="Single text field">
+				<label for="text-input-3" class="block-edit" data-block="text-field-label">Organization</label>
+				<input type="text" name="" id="text-input-3" class="block-edit" data-block="text-field-3">
+			</div>
+			<div class="col-12 block-component" data-group="email-field-component" data-title="Email field">
+				<label for="email-input" class="block-edit" data-block="text-field-label">Email address</label>
+				<input type="email" name="" id="email-input" class="block-edit" data-block="email-field" required>
+			</div>
+			<div class="col-12 block-component" data-group="tel-field-component" data-title="Phone number field">
+				<label for="tel-input" class="block-edit" data-block="text-field-label">Phone number</label>
+				<input type="tel" name="" id="tel-input" class="block-edit" data-block="tel-field">
+			</div>
+			<div class="col-12 row block-component" data-group="three-column-text-field-component" data-title="Three-column text fields">
+				<div class="col-4">
+					<label for="text-input-4" class="block-edit" data-block="text-field-label-4">City</label>
+					<input type="text" name="" id="text-input-4" class="block-edit" data-block="text-field-4">
+				</div>
+				<div class="col-4">
+					<label for="text-input-5" class="block-edit" data-block="text-field-label-5">State</label>
+					<input type="text" name="" id="text-input-5" class="block-edit" data-block="text-field-5">
+				</div>
+				<div class="col-4">
+					<label for="text-input-6" class="block-edit" data-block="text-field-label-6">ZIP code</label>
+					<input type="text" name="" id="text-input-6" class="block-edit" data-block="text-field-6">
+				</div>
+			</div>
+			<div class="col-12 block-component" data-group="select-field-component" data-title="Select field">
+				<label for="select" class="block-edit" data-block="select-field-label">Subject</label>
+				<select id="select" class="block-edit" data-block="select-field" required>
+					<option value="">Choose one</option>
+					<option value="">Issue</option>
+					<option value="">Request</option>
+				</select>
+			</div>
+			<div class="col-12 block-component" data-group="file-upload-field-component" data-title="File upload field">
+				<label for="" class="block-edit" data-block="file-upload-field-label">Include attachment</label>
+				<input type="file" class="block-edit" data-block="file-upload-field">
+			</div>
+			<div class="col-12 block-component" data-group="text-area-component" data-title="Text area field">
+				<label for="textarea" class="block-edit" data-block="text-area-field-label">Questions/comments</label>
+				<textarea rows="5" id="textarea" name="" class="block-edit" data-block="text-area-field"></textarea>
+			</div>
+			<div class="col-12 block-component" data-group="radio-field-component" data-title="Radio buttons">
+				<fieldset>
+					<legend class="block-edit">Receive notifications?</legend>
+					<ul style="margin-left: 0; list-style: none;">
+						<li class="block-region block-repeat"><input type="radio" name="radio" id="radio" name="" value="Radio" class="block-edit" data-block="radio-field" required> <label for="radio" class="block-edit" data-block="radio-field-label">All notifications</label></li>
+					</ul>
+				</fieldset>
+			</div>
+			<div class="col-12 block-component" data-group="checkbox-field-component" data-title="Checkboxes">
+				<fieldset>
+					<legend class="block-edit">Emails to receive:</legend>
+					<ul style="margin-left: 0; list-style: none;">
+						<li class="block-region block-repeat"><input type="checkbox" name="checkbox" value="Comments" id="checkbox" class="block-edit" data-block="checkbox-field" required> <label for="checkbox" class="block-edit" data-block="checkbox-field-label">Account info and changes</label></li>
+					</ul>
+				</fieldset>
+			</div>
+			<input type="submit" value="Submit" class="btn block-edit" data-block="submit-button">
+		</form>
+	</section>
 
-    </main>
+</main>
 
 <!-- Footer -->
-    <footer class="container" style="text-align: left;">
-      <nav class="row">
-        <div class="col-4">
-          <h3>Product</h3>
-          <ul>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Demo</a></li>
-            <li><a href="#">Updates</a></li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <h3>Support</h3>
-          <ul>
-            <li><a href="#">Documentation</a></li>
-            <li><a href="#">Help</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-4">
-          <h3>Company</h3>
-          <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Legal</a></li>
-          </ul>
-        </div>
-      </nav>
-    </footer>
+<footer class="container" style="text-align: left;">
+	<nav class="row">
+		<div class="col-4">
+			<h3>Product</h3>
+			<ul>
+				<li><a href="#">Features</a></li>
+				<li><a href="#">Demo</a></li>
+				<li><a href="#">Updates</a></li>
+			</ul>
+		</div>
+		<div class="col-4">
+			<h3>Support</h3>
+			<ul>
+				<li><a href="#">Documentation</a></li>
+				<li><a href="#">Help</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="col-4">
+			<h3>Company</h3>
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Legal</a></li>
+			</ul>
+		</div>
+	</nav>
+</footer>
 
-  </body>
+<script src="functions.js"></script>
+
+</body>
 </html>
