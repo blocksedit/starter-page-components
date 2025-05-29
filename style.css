@@ -70,21 +70,21 @@ h1 {
 	@media (min-width: 800px) {
 		font-size: 60px;
 	}
-	@media (min-width: 480px) {
+	@media (min-width: 600px) {
 		font-size: 52px;
 	}
 }
 h2 {
 	font-size: 32px;
 
-	@media (min-width: 480px) {
+	@media (min-width: 600px) {
 		font-size: 40px;
 	}
 }
 h3 {
 	font-size: 24px;
 
-	@media (min-width: 480px) {
+	@media (min-width: 600px) {
 		font-size: 28px;
 	}
 }
@@ -140,7 +140,7 @@ hr {
 }
 
 .row {
-	@media (min-width: 480px) {
+	@media (min-width: 600px) {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: 1fr auto;
@@ -148,10 +148,6 @@ hr {
 	}
 }
 
-@media (min-width: 480px) {
-	.col-2, .col-3 { grid-column: auto / span 6; }
-	.col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { grid-column: auto / span 12; }
-}
 @media (min-width: 600px) {
 	.col-2, .col-3, .col-4 { grid-column: auto / span 6; }
 	.col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { grid-column: auto / span 12; }
@@ -254,11 +250,8 @@ header {
 	width: 100%;
 
 	& .logo {
+		float: left;
 		margin-right: 30px;
-
-		@media (min-width: 480px) {
-			float: left;
-		}
 	}
 	& .main {
 		float: left;
@@ -281,18 +274,58 @@ header {
 		}
 	}
 	& nav {
+		& ul {
+			list-style: none;
+			margin-bottom: 0;
+			margin-left: 0;
+
+			& li {
+				display: inline-block;
+				padding-right: 10px;
+
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+
 		&.primary {
-			& ul {
+			& > ul {
 				display: none;
 
 				@media (min-width: 600px) {
 					display: block;
 				}
-				& li {
+				& > li {
 					width: 100%;
 
 					@media (min-width: 600px) {
 						width: auto;
+					}
+
+					& > ul {
+						margin-left: 20px;
+
+						@media (min-width: 600px) {
+							display: none;
+							position: absolute;
+							margin-left: 0;
+							background-color: rgba(255,255,255, .9);
+							border-radius: 10px;
+							width: 200px;
+							padding: 15px 20px;
+						}
+
+						& >li {
+							width: 100%;
+						}
+					}
+					&:hover {
+						& ul {
+							@media (min-width: 600px) {
+								display: block;
+							}
+						}
 					}
 				}
 			}
@@ -312,7 +345,7 @@ header {
 			}
 
 			&.mobile {
-				& ul {
+				& > ul {
 					display: block;
 					position: fixed;
 					background-color: rgba(255,255,255, .9);
@@ -334,21 +367,6 @@ header {
 				}
 				& .close {
 					display: block;
-				}
-			}
-		}
-
-		& ul {
-			list-style: none;
-			margin-bottom: 0;
-			margin-left: 0;
-
-			& li {
-				display: inline-block;
-				padding-right: 10px;
-
-				&:last-child {
-					padding-right: 0;
 				}
 			}
 		}
