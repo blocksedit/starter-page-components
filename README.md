@@ -1,7 +1,7 @@
 # Starter Page Components
-### HTML design system of standard form components
+### HTML design system of standard web content components
 
-Made for building forms. With common patterns that can be mixed and matched for any form.
+Made for building brochure sites, landing pages, and digital forms. With common patterns that can be mixed and matched for any type of web page.
 
 ### Features ###
 - Responsive across screen sizes
@@ -10,8 +10,15 @@ Made for building forms. With common patterns that can be mixed and matched for 
 - Blocks Edit ready for drag and drop editing
 
 ## Commonly used components ##
-Single text field, Two column text fields, Three column text fields, Text area field, File upload field, Email field, Phone number field, Radio buttons, Checkboxes, Select field
+
+### Content sections ###
+Single-column, two-column, and three-column sections, features grid, testimonial, CTA, and form container
+
+<img src="starter-pages-components-sections-2.png" />
+
+### Form fields ###
+Single, two-column, and three-column text fields, text area, file upload, email and phone number fields, radio buttons, checkboxes, and select dropdown
 
 <img src="starter-pages-components-sections.png" />
 
-This theme has been put together by the Blocks Edit team. [Blocks Edit](https://blocksedit.com) makes any HTML template editable in a visual editor. So you can setup your own design for your team to build and edit email campaigns or landing pages on their own.
+This theme has been put together by the Blocks Edit team. [Blocks Edit](https://blocksedit.com) makes any HTML template editable in a visual editor. So you can setup your own design for your team to build and edit web pages on their own.
