@@ -23,22 +23,21 @@
 <body>
 
 <!-- Header -->
-
 <header>
 	<div class="main">
 		<a href="#"><img src="https://blocksedit.com/starter/img/logo.png" width="75" height="35" class="logo" alt=""></a>
 		<nav class="primary">
 			<ul>
-				<li class="block-edit block-remove"><a href="#">About</a></li>
-				<li class="block-region block-repeat block-edit">
-					<a href="#">Features</a>
+				<li class="block-region block-remove" data-group="mainnav-1"><a href="#" class="block-edit" data-block="mainnav-item-1">About</a></li>
+				<li class="block-region block-repeat" data-group="mainnav-2">
+					<a href="#" class="block-edit" data-block="mainnav-item-2">Features</a>
 					<ul>
-						<li class="block-edit block-remove"><a href="#">Tools</a></li>
-						<li class="block-edit block-remove"><a href="#">Mobile</a></li>
-						<li class="block-region block-repeat block-edit" data-group="subnav" data-block="subnav-item"><a href="#">Devices</a></li>
+						<li class="block-region block-remove" data-group="subnav-1"><a href="#" class="block-edit" data-block="subnav-item-1">Tools</a></li>
+						<li class="block-region block-remove" data-group="subnav-2"><a href="#" class="block-edit" data-block="subnav-item-2">Mobile</a></li>
+						<li class="block-region block-repeat" data-group="subnav-3"><a href="#" class="block-edit" data-block="subnav-item-3">Devices</a></li>
 					</ul>
 				</li>
-				<li class="block-region block-repeat block-edit" data-group="mainnav" data-block="mainnav-item"><a href="#">Pricing</a></li>
+				<li class="block-region block-repeat" data-group="mainnav-5"><a href="#" class="block-edit" data-block="mainnav-item-3">Pricing</a></li>
 			</ul>
 			<svg width="18" height="18" class="menu">
 				<g>
@@ -54,21 +53,130 @@
 	</div>
 	<nav class="cta right-align secondary">
 		<ul>
-			<li><a href="#">Sign In</a></li>
-			<li><a href="#" class="btn">Sign Up</a></li>
+			<li><a href="#" class="block-edit" data-block="mainnav-cta-1">Sign In</a></li>
+			<li><a href="#" class="btn block-edit" data-block="mainnav-cta-2">Sign Up</a></li>
 		</ul>
 	</nav>
 </header>
 
 <!-- Content -->
-
 <main class="container">
+
+<!-- Content elements -->
+	<h1 class="block-component block-edit" data-group="content-h1" data-block="content-h1-text">A better way to run your business</h1>
+	<h2 class="block-component block-edit" data-group="content-h2" data-block="content-h2-text">Tool available</h2>
+	<h3 class="block-component block-edit" data-group="content-h3" data-block="content-h3-text">Help docs</h3>
+	<p class="block-component block-edit" data-group="content-description" data-block="content-description-text">Running your business can get complicated but it doesn't have to! It requires focusing on basic principles and the core of what makes you and your product or service unique. We'll help you with that focus.</p>
+	<a href="#" class="btn block-component block-edit" data-group="content-cta" data-block="content-cta-text">Get started</a>
+	<a href="#" class="btn btn-alt block-component block-edit" data-group="content-cta-alt" data-block="content-cta-alt-text">More info</a>
+	<img src="https://blocksedit.com/starter/img/photo-new.jpg" width="100%" class="border fill block-component block-edit" data-group="content-image" data-block="content-image-image" alt="">
+
+<!-- Feature content - single-column -->
+	<section class="row block-section" data-group="feature-single" data-title="Single-column feature content">
+		<div class="col-12">
+			<img src="https://blocksedit.com/starter/img/photo-new.jpg" width="100%" class="border fill block-edit block-remove" data-block="feature-single-image" alt="">
+			<h1 class="block-edit block-remove" data-block="feature-single-title">A better way to run your business</h1>
+			<p class="block-edit block-remove" data-block="feature-single-description">Running your business can get complicated but it doesn't have to! It requires focusing on basic principles and the core of what makes you and your product or service unique. We'll help you with that focus.</p>
+			<a href="#" class="btn block-edit block-remove" data-block="feature-single-cta">Get started</a>
+		</div>
+	</section>
+
+<!-- Feature content - two-column -->
+	<section class="row mobile-top block-section" data-group="feature-two" data-title="Two-column feature content">
+		<div class="col-6" style="align-content: center;">
+			<h1 class="block-edit" data-block="feature-two-title">A better way to run your business</h1>
+			<p class="block-edit" data-block="feature-two-description">Running your business can get complicated but it doesn't have to! It requires focusing on basic principles and the core of what makes you and your product or service unique. We'll help you with that focus.</p>
+			<a href="#" class="btn block-edit" data-block="feature-two-cta">Get started</a>
+		</div>
+		<div class="col-6" style="align-content: center;">
+			<img src="https://blocksedit.com/starter/img/photo-new-tall.jpg" width="100%" class="border fill block-edit" data-block="feature-two-image" alt="">
+		</div>
+	</section>
+	<section class="row mobile-top block-section" data-group="feature-two" data-title="Two-column feature content">
+		<div class="col-6" style="align-content: center;">
+			<img src="https://blocksedit.com/starter/img/photo-new-tall.jpg" width="100%" class="border fill block-edit" data-block="feature-two-image" alt="">
+		</div>
+		<div class="col-6" style="align-content: center;">
+			<h1 class="block-edit" data-block="feature-two-title">A better way to run your business</h1>
+			<p class="block-edit" data-block="feature-two-description">Running your business can get complicated but it doesn't have to! It requires focusing on basic principles and the core of what makes you and your product or service unique. We'll help you with that focus.</p>
+			<a href="#" class="btn block-edit" data-block="feature-two-cta">Get started</a>
+		</div>
+	</section>
+
+<!-- Feature content - three-column -->
+	<section class="row block-section" data-group="feature-three" data-title="Three-column feature content">
+		<div class="col-4">
+			<img src="https://blocksedit.com/starter/img/product-app.jpg" width="100%" class="border fill block-edit" data-block="feature-three-image-1" alt="">
+			<h2 class="block-edit" data-block="feature-three-title-1">Tool available</h2>
+			<p class="block-edit" data-block="feature-three-description-1">We've added this feature based on user feedback and research. We also eat our own dog food and have used it with our internal team the last few months as we've fine tuned it!</p>
+			<a href="#" class="btn btn-alt block-edit" data-block="feature-three-cta-1">More info</a>
+		</div>
+		<div class="col-4">
+			<img src="https://blocksedit.com/starter/img/product-watch-app.jpg" width="100%" class="border fill block-edit" data-block="feature-three-image-2" alt="">
+			<h2 class="block-edit" data-block="feature-three-title-2">Across devices</h2>
+			<p class="block-edit" data-block="feature-three-description-2">Either on your desktop, mobile phone, watch, car infotainment system, portable kitchen display, home TV, or fridge monitor, integrated and ready to work for you.</p>
+			<a href="#" class="btn btn-alt block-edit" data-block="feature-three-cta-2">More info</a>
+		</div>
+		<div class="col-4">
+			<img src="https://blocksedit.com/starter/img/product-tablet-app.jpg" width="100%" class="border fill block-edit" data-block="feature-three-image-3" alt="">
+			<h2 class="block-edit" data-block="feature-three-title-3">Customize it</h2>
+			<p class="block-edit" data-block="feature-three-description-3">Our modular system allows for fully customizable options that work around your business needs, your individual preferences, as well as your team's culture and their own habits.</p>
+			<a href="#" class="btn btn-alt block-edit" data-block="feature-three-cta-3">More info</a>
+		</div>
+	</section>
+
+<!-- Feature content - features grid -->
+	<section class="row block-section" data-group="feature-grid" data-title="Features grid feature content">
+		<div class="col-12" style="text-align: center;">
+			<h1 class="block-edit block-remove" data-block="feature-grid-title">A better way to run your business</h1>
+			<p class="block-edit block-remove" data-block="feature-grid-description">Running your business can get complicated but it doesn't have to! It requires focusing on basic principles and the core of what makes you and your product or service unique. We'll help you with that focus.</p>
+		</div>
+		<div class="col-4 box box-small">
+			<h3 class="block-edit" data-block="feature-grid-title-1">Help docs</h3>
+			<p class="block-edit" data-block="feature-grid-description-1">Start here to get an overview of the options you have on your dashboard and learn how everything works.</p>
+		</div>
+		<div class="col-4 box box-small">
+			<h3 class="block-edit" data-block="feature-grid-title-2">Tutorial videos</h3>
+			<p class="block-edit" data-block="feature-grid-description-2">Learn to effectively use all the tools available to you and watch presentations from other users.</p>
+		</div>
+		<div class="col-4 box box-small">
+			<h3 class="block-edit" data-block="feature-grid-title-3">Community forums</h3>
+			<p class="block-edit" data-block="feature-grid-description-3">Connect with other users, learn and share, and have questions answered by our support team.</p>
+		</div>
+		<div class="col-4 box box-small">
+			<h3 class="block-edit" data-block="feature-grid-title-4">Help docs</h3>
+			<p class="block-edit" data-block="feature-grid-description-4">Start here to get an overview of the options you have on your dashboard and learn how everything works.</p>
+		</div>
+		<div class="col-4 box box-small">
+			<h3 class="block-edit" data-block="feature-grid-title-5">Tutorial videos</h3>
+			<p class="block-edit" data-block="feature-grid-description-5">Learn to effectively use all the tools available to you and watch presentations from other users.</p>
+		</div>
+		<div class="col-4 box box-small">
+			<h3 class="block-edit" data-block="feature-grid-title-6">Community forums</h3>
+			<p class="block-edit" data-block="feature-grid-description-6">Connect with other users, learn and share, and have questions answered by our support team.</p>
+		</div>
+	</section>
+
+<!-- Feature content - CTA -->
+	<section class="block-section box box-large" data-group="feature-cta" data-title="CTA feature content" style="text-align: center;">
+		<h1 class="block-edit" data-block="feature-cta-title">Give us a try</h1>
+		<p class="block-edit" data-block="feature-cta-description">With your account is a 30-day trial to use all the features that our tool set has to offer. Enough time to start seeing the effort you put in for your business starting to pay off!</p>
+		<a href="#" class="btn block-edit" data-block="feature-cta-cta">Continue using for free</a>
+	</section>
+
+<!-- Feature content - testimonial -->
+	<section class="block-section" data-group="feature-testimonial" data-title="Testimonial feature content">
+		<blockquote>
+			<p class="block-edit" data-block="feature-testimonial-quote">Running your business can get complicated but it doesn't have to! It requires focusing on basic principles and the core of what makes you and your product or service unique. We'll help you with that focus.</p>
+			<cite class="block-edit" data-block="feature-testimonial-author">Someone, from the company</cite>
+		</blockquote>
+	</section>
 
 <!-- Form -->
 	<section class="box box-full block-section" data-group="form" data-title="Form container">
 		<form action="" method="">
-			<p class="block-edit">Use the form below to contact us.</p>
-			<div class="row block-region"></div>
+			<p class="block-edit" data-block="form-intro">Use the form below to contact us.</p>
+			<div class="row block-region" data-group="form-fields"></div>
 			<div class="col-12 row block-component" data-group="two-column-text-field-component" data-title="Two-column text fields">
 				<div class="col-6">
 					<label for="text-input" class="block-edit" data-block="text-field-label">First name</label>
@@ -125,7 +233,7 @@
 				<fieldset>
 					<legend class="block-edit">Receive notifications?</legend>
 					<ul style="margin-left: 0; list-style: none;">
-						<li class="block-region block-repeat"><input type="radio" name="radio" id="radio" name="" value="Radio" class="block-edit" data-block="radio-field" required> <label for="radio" class="block-edit" data-block="radio-field-label">All notifications</label></li>
+						<li class="block-region block-repeat" data-group="radio-buttons"><input type="radio" name="radio" id="radio" name="" value="Radio" class="block-edit" data-block="radio-field" required> <label for="radio" class="block-edit" data-block="radio-field-label">All notifications</label></li>
 					</ul>
 				</fieldset>
 			</div>
@@ -133,7 +241,7 @@
 				<fieldset>
 					<legend class="block-edit">Emails to receive:</legend>
 					<ul style="margin-left: 0; list-style: none;">
-						<li class="block-region block-repeat"><input type="checkbox" name="checkbox" value="Comments" id="checkbox" class="block-edit" data-block="checkbox-field" required> <label for="checkbox" class="block-edit" data-block="checkbox-field-label">Account info and changes</label></li>
+						<li class="block-region block-repeat" data-group="checkboxes"><input type="checkbox" name="checkbox" value="Comments" id="checkbox" class="block-edit" data-block="checkbox-field" required> <label for="checkbox" class="block-edit" data-block="checkbox-field-label">Account info and changes</label></li>
 					</ul>
 				</fieldset>
 			</div>
@@ -144,30 +252,30 @@
 </main>
 
 <!-- Footer -->
-<footer class="container" style="text-align: left;">
+<footer class="container">
 	<nav class="row">
 		<div class="col-4">
-			<h3>Product</h3>
+			<h3 class="block-edit" data-block="footernav-group-1">Product</h3>
 			<ul>
-				<li><a href="#">Features</a></li>
-				<li><a href="#">Demo</a></li>
-				<li><a href="#">Updates</a></li>
+				<li class="block-region block-remove" data-group="footernav-1"><a href="#" class="block-edit" data-block="footernav-item-1">Features</a></li>
+				<li class="block-region block-remove" data-group="footernav-2"><a href="#" class="block-edit" data-block="footernav-item-2">Demo</a></li>
+				<li class="block-region block-repeat" data-group="footernav-3"><a href="#" class="block-edit" data-block="footernav-item-3">Updates</a></li>
 			</ul>
 		</div>
 		<div class="col-4">
-			<h3>Support</h3>
+			<h3 class="block-edit" data-block="footernav-group-2">Support</h3>
 			<ul>
-				<li><a href="#">Documentation</a></li>
-				<li><a href="#">Help</a></li>
-				<li><a href="#">Contact</a></li>
+				<li class="block-region block-remove" data-group="footernav-4"><a href="#" class="block-edit" data-block="footernav-item-4">Documentation</a></li>
+				<li class="block-region block-remove" data-group="footernav-5"><a href="#" class="block-edit" data-block="footernav-item-5">Help</a></li>
+				<li class="block-region block-repeat" data-group="footernav-6"><a href="#" class="block-edit" data-block="footernav-item-6">Contact</a></li>
 			</ul>
 		</div>
 		<div class="col-4">
-			<h3>Company</h3>
+			<h3 class="block-edit" data-block="footernav-group-3">Company</h3>
 			<ul>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Legal</a></li>
+				<li class="block-region block-remove" data-group="footernav-7"><a href="#" class="block-edit" data-block="footernav-item-7">About</a></li>
+				<li class="block-region block-remove" data-group="footernav-8"><a href="#" class="block-edit" data-block="footernav-item-8">Blog</a></li>
+				<li class="block-region block-repeat" data-group="footernav-9"><a href="#" class="block-edit" data-block="footernav-item-9">Legal</a></li>
 			</ul>
 		</div>
 	</nav>
