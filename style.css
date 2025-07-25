@@ -303,6 +303,69 @@ blockquote {
 	}
 }
 
+.callout {
+	margin-bottom: 20px;
+	border: #444 5px solid;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+.intro {
+	font-size: 20px;
+
+	@media (min-width: 800px) {
+		font-size: 22px;
+	}
+	@media (min-width: 1200px) {
+		font-size: 24px;
+	}
+}
+
+figure {
+	margin-bottom: 20px;
+	text-align: center;
+
+	img {
+		width: 100%;
+
+		@media (min-width: 800px) {
+			width: auto;
+			zoom: 50%;
+		}
+	}
+
+	figcaption {
+		font-size: 14px;
+		text-align: center;
+
+		@media (min-width: 800px) {
+			font-size: 16px;
+		}
+		@media (min-width: 1200px) {
+			font-size: 18px;
+		}
+	}
+}
+
+.pullquote {
+	position: relative;
+	margin-bottom: 20px;
+	border-radius: 0;
+	padding: 30px;
+	text-align: left;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		border-radius: 5px;
+		width: 5px;
+		background-color: #444;
+	}
+}
+
 /* Header */
 
 header {
