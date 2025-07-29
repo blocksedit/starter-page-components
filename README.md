@@ -16,6 +16,11 @@ Single-column, two-column, and three-column sections, features grid, testimonial
 
 <img src="starter-pages-components-sections-2.png" />
 
+### Article content ###
+Titles, body text, content image, pull quote, bullet list, buttons, image with caption, callout
+
+<img src="starter-pages-components-sections-3.png" />
+
 ### Form fields ###
 Single, two-column, and three-column text fields, text area, file upload, email and phone number fields, radio buttons, checkboxes, and select dropdown
 
