@@ -366,6 +366,52 @@ figure {
 	}
 }
 
+.de-emphasize {
+	font-size: 14px;
+
+	@media (min-width: 800px) {
+		font-size: 16px;
+	}
+	@media (min-width: 1200px) {
+		font-size: 18px;
+	}
+}
+
+.avatar {
+	border-radius: 100%;
+}
+
+.author {
+	& .avatar {
+		float: left;
+		margin-right: 10px;
+	}
+}
+
+.calendar {
+	border-radius: 5px;
+	overflow: hidden;
+
+	& .month {
+		background-color: #df1e1e;
+		font-size: 14px;
+		line-height: 30px;
+		color: #ffffff;
+		text-align: center;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+
+	& .day {
+		background-color: #f0f0f0;
+		font-size: 36px;
+		line-height: 56px;
+		color: #444444;
+		text-align: center;
+		font-weight: 600;
+	}
+}
+
 /* Header */
 
 header {
