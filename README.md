@@ -1,7 +1,7 @@
 # Starter Page Components
-### HTML design system of standard web content components
+### HTML design system of standard web content components based on hundreds of real-world websites
 
-Made for building brochure sites, landing pages, and digital forms. With common patterns that can be mixed and matched for any type of web page.
+Made for building brochure sites, landing pages, content articles, and digital forms. With common patterns that can be mixed and matched for any type of web page.
 
 ### Features ###
 - Responsive across screen sizes
@@ -12,17 +12,22 @@ Made for building brochure sites, landing pages, and digital forms. With common 
 ## Commonly used components ##
 
 ### Content sections ###
-Single-column, two-column, and three-column sections, features grid, testimonial, CTA, and form container
+Skimmable sections for a homepage and landing pages.
 
 <img src="starter-pages-components-sections-2.png" />
 
+### Content listings ###
+A series of related items like articles, products, and events.
+
+<img src="starter-pages-components-sections-4.png" />
+
 ### Article content ###
-Titles, body text, content image, pull quote, bullet list, buttons, image with caption, callout
+Ways to format content elements in an article.
 
 <img src="starter-pages-components-sections-3.png" />
 
 ### Form fields ###
-Single, two-column, and three-column text fields, text area, file upload, email and phone number fields, radio buttons, checkboxes, and select dropdown
+Fields to collect information, for contact forms, surveys, etc.
 
 <img src="starter-pages-components-sections.png" />
 
